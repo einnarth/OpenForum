@@ -1,72 +1,33 @@
-Open Forum
+# Open Forum 
 
-Open Forum is a full-stack web application that allows users to share programming problems, discuss solutions and collaborate with other students.
+> A full-stack web application for students to share programming problems, discuss solutions, and collaborate.
 
-The project was developed as part of the Open Lab mentoring program in collaboration with Siemens Healthineers.
+This project was developed as part of the **Open Lab mentoring program** in collaboration with **Siemens Healthineers**. It serves as a practical implementation of a client-server architecture, modern web frameworks, and secure authentication.
 
-Features
+## ✨ Features
+- **User System & Security:** Registration and authentication (JWT), email verification, password reset functionality, and profile management.
+- **Content Management:** Creating, managing, and browsing discussion posts.
+- **Community Interaction:** Commenting on posts, a like system for comments, and dynamic sorting by popularity.
 
-User registration and authentication
+## 🏗️ Architecture
+The application follows a standard client-server architecture:
+- **Frontend (Angular)** communicates with the backend via REST API.
+- **Backend (ASP.NET Core Web API)** handles business logic, security, and database operations.
 
-Email verification
+## 🛠️ Tech Stack
 
-Password reset functionality
+**Backend**
+* C# / ASP.NET Core
+* ASP.NET Identity + JWT Authentication
+* Entity Framework Core
+* MSSQL
 
-Creating and managing posts
+**Frontend**
+* Angular / TypeScript
+* HTML5 / CSS3
 
-Commenting on posts
-
-Like system for comments
-
-Sorting comments by popularity
-
-User profile management
-
-Technologies
-Backend
-
-C#
-
-ASP.NET Core
-
-ASP.NET Identity
-
-Entity Framework Core
-
-MSSQL
-
-JWT Authentication
-
-Frontend
-
-Angular
-
-TypeScript
-
-HTML
-
-CSS
-
-Other Tools
-
-Firebase (notifications / services)
-
-Git & GitHub
-
-SMTP email service
-
-Architecture
-
-The application follows a client-server architecture:
-
-Frontend (Angular) communicates with the backend via REST API.
-
-Components:
-
-Frontend – Angular SPA
-
-Backend – ASP.NET Core Web API
-
-Database – MSSQL
-
-Authentication – ASP.NET Identity + JWT
+**Other Tools & Services**
+* Firebase (notifications / services)
+* SMTP email service
+* Google ReCaptcha
+* Git & GitHub
